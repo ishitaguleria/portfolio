@@ -1,0 +1,72 @@
+/* Parallax.css */
+
+.parallax {
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: relative;
+  overflow: hidden;
+}
+
+.headtext {
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  color: white;
+  z-index: 5;
+  margin-block-end: 2em;
+}
+
+.background-elements {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Keep the elements behind the heading */
+}
+
+.mountains,
+.stars,
+.planets {
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Rest of your styles for .mountains, .stars, .planets */
+
+.mountains {
+  background-image: url("/mountains.png"); /* Assuming mountains.png is in the public folder */
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+}
+
+.stars {
+  background-image: url("/stars.png"); /* Assuming stars.png is in the public folder */
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-repeat: repeat-x;
+}
+
+.planets {
+  background-image: url("/planets.png"); /* Assuming planets.png is in the public folder */
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background-repeat: repeat-y;
+}

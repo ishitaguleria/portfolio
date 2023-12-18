@@ -1,0 +1,28 @@
+.navbar {
+  height: 100px;
+  color: black;
+}
+.images {
+  width: 80px;
+  height: 65px;
+  mix-blend-mode: multiply;
+}
+.wrapper {
+  height: 100%;
+  max-width: 1495px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #9b7dcc;
+}
+span {
+  font-weight: bold;
+  padding: 18px;
+  font-size: 30px;
+  font-style: italic;
+}
+.social {
+  display: flex;
+  /*gap: 20px;*/
+}

@@ -1,0 +1,57 @@
+.avatar {
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the right */
+  align-items: center; /* Vertically centers the content */
+  height: 100%; /* Fills the entire height of the Homepage section */
+}
+
+.imageContainer {
+  width: 65%; /* Set width to match the Homepage section */
+  height: 80%; /* Set height to match the Homepage section */
+  margin-left: auto; /* Pushes the image container to the left */
+  margin-right: 20px; /* Adds spacing to the right end of the image container */
+  display: flex; /* Ensures the image is fully visible */
+  align-items: center; /* Vertically centers the image */
+  justify-content: space-around;
+}
+
+/* Adjust the image to fit within its container */
+img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+.textwrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  margin-left: 20px;
+  padding-left: 14%;
+}
+.textContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  /*padding-left: 35%;*/
+}
+h2 {
+  font-size: 30px;
+  color: rgb(253, 250, 250);
+  letter-spacing: 5px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+  font-size: 95px;
+  font-style: italic;
+}
+.slidingtextContainer {
+  position: absolute;
+  font-size: 50vh;
+  bottom: -3px;
+  white-space: nowrap;
+  color: rgba(128, 67, 128, 0.284);
+}
